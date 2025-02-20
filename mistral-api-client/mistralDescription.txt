@@ -1,0 +1,81 @@
+export const mistralDefaultModelId: MistralModelId = "mistral-large-latest"
+
+export const mistralModels = {
+	"ministral-3b-latest": {
+		maxTokens: 131072,
+		contextWindow: 131072,
+		supportsImages: false,
+		supportsPromptCache: false,
+		defaultTemperature: 0.30,
+	},
+	"ministral-8b-latest": {
+		maxTokens: 131072,
+		contextWindow: 131072,
+		supportsImages: false,
+		supportsPromptCache: false,
+		defaultTemperature: 0.30,
+	},
+	"mistral-tiny-latest": {
+		maxTokens: 131072,
+		contextWindow: 131072,
+		supportsImages: false,
+		supportsPromptCache: false,
+		defaultTemperature: 0.30,
+	},
+	"mistral-medium-latest": {
+		maxTokens: 32768,
+		contextWindow: 32768,
+		supportsImages: false,
+		supportsPromptCache: false,
+		defaultTemperature: 0.70,
+	},
+	"mistral-large-latest": {
+		maxTokens: 131072,
+		contextWindow: 131072,
+		supportsImages: false,
+		supportsPromptCache: false,
+		defaultTemperature: 0.70,
+	},
+	"pixtral-large-latest": {
+		maxTokens: 131072,
+		contextWindow: 131072,
+		supportsImages: true,
+		supportsPromptCache: false,
+		defaultTemperature: 0.70,
+	},
+	"codestral-latest": {
+		maxTokens: 262144,
+		contextWindow: 262144,
+		supportsImages: false,
+		supportsPromptCache: false,
+		defaultTemperature: 0.30,
+	},
+	"codestral-mamba-latest": {
+		maxTokens: 262144,
+		contextWindow: 262144,
+		supportsImages: false,
+		supportsPromptCache: false,
+		defaultTemperature: 0.70,
+	},
+	"pixtral-12b-latest": {
+		maxTokens: 131072,
+		contextWindow: 131072,
+		supportsImages: true,
+		supportsPromptCache: false,
+		defaultTemperature: 0.30,
+	},
+	"mistral-small-latest": {
+		maxTokens: 32768,
+		contextWindow: 32768,
+		supportsImages: false,
+		supportsPromptCache: false,
+		defaultTemperature: 0.30,
+	},
+	"mistral-saba-latest": {
+		maxTokens: 32768,
+		contextWindow: 32768,
+		supportsImages: false,
+		supportsPromptCache: false,
+		defaultTemperature: 0.30,
+	},
+} as const satisfies Record<string, ModelInfo>
